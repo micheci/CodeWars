@@ -1,0 +1,12 @@
+function squareDigits(num){
+const digits = num.toString();
+  let squaredDigits = '';
+  
+  for (let i = 0; i < digits.length; i++) {
+    const digit = parseInt(digits[i]);
+    const squaredDigit = digit * digit;
+    squaredDigits += squaredDigit.toString();
+  }
+  
+  return parseInt(squaredDigits);
+}
