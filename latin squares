@@ -1,0 +1,40 @@
+function makeLatinSquare(n) {
+2
+  // Your code here
+3
+    let square = [];
+4
+  
+5
+  // Create an empty matrix of size n x n
+6
+  for (let i = 0; i < n; i++) {
+7
+    square[i] = [];
+8
+  }
+9
+  
+10
+  // Fill the matrix with values from 1 to n
+11
+  for (let i = 0; i < n; i++) {
+12
+    for (let j = 0; j < n; j++) {
+13
+      square[i][j] = (i + j) % n + 1;
+14
+    }
+15
+  }
+16
+  
+17
+  return square;
+18
+  
+19
+  return [[]];
+20
+}
+ Excellent! Y
