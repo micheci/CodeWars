@@ -1,0 +1,16 @@
+function comp(a, b) {
+  if (a === null || b === null || a.length !== b.length) {
+    return false;
+  }
+
+  a.sort((x, y) => x - y);
+  b.sort((x, y) => x - y);
+
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] * a[i] !== b[i]) {
+      return false;
+    }
+  }
+
+  return true;
+}
